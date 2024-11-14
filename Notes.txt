@@ -1,0 +1,6 @@
+Factory Method 
+	O factory method define uma interface para criação de objetos permitindo que a sub-classe decida qual
+	instância deve ser criada.
+
+	Na Super classe terá o método abstrato da criação do objeto, delegando a responsabilidade de decidir quais objetos devem ser
+	criados para a sub-classe.
