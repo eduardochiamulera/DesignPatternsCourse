@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DesignPatterns.src.GOF.Creational.Factory_Method
+﻿namespace DesignPatterns.src.GOF.Creational.Factory_Method
 {
 	public class UpdateLocation
 	{
@@ -32,5 +26,5 @@ namespace DesignPatterns.src.GOF.Creational.Factory_Method
 		}
 	}
 
-	public record UpdateLocationRequest(Guid rideId, decimal Latitude, decimal Longitude, DateTime Date) { }
+	public record UpdateLocationRequest(Guid rideId, double Latitude, double Longitude, DateTime Date) { }
 }

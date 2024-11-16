@@ -2,7 +2,7 @@
 {
 	public class Ride
 	{
-		public Ride(decimal latitude, decimal longitude, DateTime date)
+		public Ride(double latitude, double longitude, DateTime date)
 		{
 			LastLocation = new Location(latitude, longitude, date);
 			RideId = Guid.NewGuid();
@@ -15,5 +15,17 @@
 		{
 			LastLocation = location;
 		}
+
+		public decimal CalculateFare(IEnumerable<Segment> segments)
+		{
+			double total = 0;
+
+			foreach (var segment in segments) {
+				total += segment.GetDistance();
+			}
+
+			return (decimal)total * 4;
+		}
+
 	}
 }
