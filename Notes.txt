@@ -4,3 +4,7 @@ Factory Method
 
 	Na Super classe terá o método abstrato da criação do objeto, delegando a responsabilidade de decidir quais objetos devem ser
 	criados para a sub-classe.
+
+Singleton
+	O padrão Singleton garante que uma classe tenha apenas uma instância, fornecendo um ponto de acesso global a ela.
+	Ex: Acesso a um tipo de recurso, um arquivo, acesso ao bando de dados.
