@@ -17,11 +17,11 @@
 
 			var newLocation = new Location(input.Latitude, input.Longitude, input.Date);
 
-			var segment = new Segment(ride.RideId, ride.LastLocation, newLocation);
+			var segment = ride.CreateSegment(ride.LastLocation, newLocation);
 
 			ride.UpdateLocation(newLocation);
 
-			_rideRepository.Save(ride);
+			_rideRepository.Update(ride);
 			_segmentRepository.Save(segment);
 		}
 	}

@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.src.GOF.Creational.Factory_Method
 {
-	public class Segment
+	public abstract class Segment
 	{
 		public Segment(Guid rideId, Location from, Location to)
 		{
@@ -13,7 +13,17 @@
 		public Location To { get; private set; }
 		public Guid RideId { get; private set; }
 
-		public double GetDistance()
+		public abstract double GetValue();
+	}
+
+
+	public class DistanceSegment : Segment
+	{
+		public DistanceSegment(Guid rideId, Location from, Location to) : base(rideId, from, to)
+		{
+		}
+
+		private double GetDistance()
 		{
 			var earthRadius = 6371;
 			double degreesToRadians = Math.PI / 180;
@@ -28,5 +38,21 @@
 			var c = 2 * Math.Atan2(Math.Sqrt(a), Math.Sqrt(1 - a));
 			return Math.Round(earthRadius * c);
 		}
+
+		public override double GetValue() => GetDistance();
+	}
+
+	public class TimeSegment : Segment
+	{
+		public TimeSegment(Guid rideId, Location from, Location to) : base(rideId, from, to)
+		{
+		}
+
+		private double GetDiffInMinutes()
+		{
+			return (To.Date - From.Date).TotalMinutes;
+		}
+
+		public override double GetValue() => GetDiffInMinutes();
 	}
 }
