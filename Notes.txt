@@ -8,3 +8,7 @@ Factory Method
 Singleton
 	O padrão Singleton garante que uma classe tenha apenas uma instância, fornecendo um ponto de acesso global a ela.
 	Ex: Acesso a um tipo de recurso, um arquivo, acesso ao bando de dados.
+
+Prototype
+	Ele especifica objetos que se chamam protótipos para servir como base para realização de cópias.
+	Ou seja, facilitam a criação de novos objetos por meio da cópia de objetos existentes.
