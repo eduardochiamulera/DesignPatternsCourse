@@ -16,7 +16,7 @@
 			var fields = new List<Field>();
 			foreach (var field in form.Fields)
 			{
-				fields.Add(new Field(field.Id, field.Type, field.Title);
+				fields.Add(new Field(field.Id, field.Type, field.Title));
 			}
 			newForm.Fields = fields;
 			await _formRepository.Save(newForm);
