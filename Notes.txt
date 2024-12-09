@@ -26,3 +26,8 @@ STRUCTURAL
 		para o padrão que os clientes esperam.
 		Ele é um padrão que faz uma conversão, permitindo que se crie compatibilidade.
 		Evitar acomplamento.
+
+	Bridge
+		Desacoplar uma abstração da sua implementação por que assim as duas podem
+		variar de forma independente.
+		
