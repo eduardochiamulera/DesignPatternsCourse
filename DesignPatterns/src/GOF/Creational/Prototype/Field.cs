@@ -1,6 +1,6 @@
 ﻿namespace DesignPatterns.src.GOF.Creational.Prototype
 {
-	public class Field
+	public class Field : Prototype
 	{
 		public Field(Guid id, string type, string title)
 		{
@@ -16,6 +16,11 @@
 		public static Field Create(string type, string title)
 		{
 			return new Field(Guid.NewGuid(), type, title);
+		}
+
+		public Prototype Clone()
+		{
+			return new Field(Id, Type, Title);
 		}
 	}
 }

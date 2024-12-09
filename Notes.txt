@@ -1,14 +1,28 @@
-Factory Method 
-	O factory method define uma interface para criação de objetos permitindo que a sub-classe decida qual
-	instância deve ser criada.
+CREATIONAL
+	Factory Method 
+		O factory method define uma interface para criação de objetos permitindo que a sub-classe decida qual
+		instância deve ser criada.
+	
+		Na Super classe terá o método abstrato da criação do objeto, delegando a responsabilidade de decidir quais objetos devem ser
+		criados para a sub-classe.
+	
+	Singleton
+		O padrão Singleton garante que uma classe tenha apenas uma instância, fornecendo um ponto de acesso global a ela.
+		Ex: Acesso a um tipo de recurso, um arquivo, acesso ao bando de dados.
+	
+	Prototype
+		Ele especifica objetos que se chamam protótipos para servir como base para realização de cópias.
+		Ou seja, facilitam a criação de novos objetos por meio da cópia de objetos existentes.
+	
+	Builder
+		Separa a construção de um objeto complexo da sua representação, eventualmente permitindo que 
+		esse mesmo processo de construção possa derivar objetos diferentes.
+		Vai abstrair o passo a passo de uma construção complexa.
 
-	Na Super classe terá o método abstrato da criação do objeto, delegando a responsabilidade de decidir quais objetos devem ser
-	criados para a sub-classe.
 
-Singleton
-	O padrão Singleton garante que uma classe tenha apenas uma instância, fornecendo um ponto de acesso global a ela.
-	Ex: Acesso a um tipo de recurso, um arquivo, acesso ao bando de dados.
-
-Prototype
-	Ele especifica objetos que se chamam protótipos para servir como base para realização de cópias.
-	Ou seja, facilitam a criação de novos objetos por meio da cópia de objetos existentes.
+STRUCTURAL
+	Adapter (Wrapper)
+		Ele é utilizado para que se possa converter uma determinada interface de uma classe
+		para o padrão que os clientes esperam.
+		Ele é um padrão que faz uma conversão, permitindo que se crie compatibilidade.
+		Evitar acomplamento.

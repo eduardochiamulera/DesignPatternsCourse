@@ -12,13 +12,13 @@
 		public async Task Execute(Input input)
 		{
 			var form = await _formRepository.GetById(input.fromFormId);
-			var newForm = new Form(input.newFormId, input.newCategory, input.newDescription);
-			var fields = new List<Field>();
-			foreach (var field in form.Fields)
-			{
-				fields.Add(new Field(field.Id, field.Type, field.Title));
-			}
-			newForm.Fields = fields;
+			
+			var newForm = (Form)form.Clone();
+
+			newForm.Id = input.newFormId;
+			newForm.Description = input.newDescription;
+			newForm.Category = input.newCategory;
+
 			await _formRepository.Save(newForm);
 		}
     }
