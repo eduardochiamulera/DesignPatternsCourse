@@ -9,10 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{749A9A46-D74A-4A13-83B9-75EF347711B2}"
 	ProjectSection(SolutionItems) = preProject
+		C:\Users\eduar\source\repos\test\ConsoleApp1\bin\Debug\net8.0\loteria_timespan.csv = C:\Users\eduar\source\repos\test\ConsoleApp1\bin\Debug\net8.0\loteria_timespan.csv
 		Notes.txt = Notes.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{19AD0659-539C-478D-9CE8-E3BEC81752D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{19AD0659-539C-478D-9CE8-E3BEC81752D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{69742E6F-3015-4574-8A55-38A787B6ABF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +35,10 @@ Global
 		{19AD0659-539C-478D-9CE8-E3BEC81752D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19AD0659-539C-478D-9CE8-E3BEC81752D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19AD0659-539C-478D-9CE8-E3BEC81752D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69742E6F-3015-4574-8A55-38A787B6ABF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69742E6F-3015-4574-8A55-38A787B6ABF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69742E6F-3015-4574-8A55-38A787B6ABF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69742E6F-3015-4574-8A55-38A787B6ABF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

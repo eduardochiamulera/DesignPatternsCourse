@@ -31,3 +31,6 @@ STRUCTURAL
 		Desacoplar uma abstração da sua implementação por que assim as duas podem
 		variar de forma independente.
 		
+	FlyWeight
+		Utilize o padrão para dar suporte a um grande número de objetos (muito especificos) de uma maneira eficiente.
+		A proposta desse padrão é atuar como uma forma de cache.
