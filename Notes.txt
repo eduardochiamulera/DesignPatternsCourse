@@ -34,3 +34,10 @@ STRUCTURAL
 	FlyWeight
 		Utilize o padrão para dar suporte a um grande número de objetos (muito especificos) de uma maneira eficiente.
 		A proposta desse padrão é atuar como uma forma de cache.
+
+	Decorator
+		A intenção dele é adicionar comportamento a um objeto existente, de maneira dinâmica, de forma incremental,
+		flexivel, podendo adicionar ou remover esse comportamento sem que o objeto saiba.
+		Open/Close principal
+
+		Ele incorpora um objeto que está sendo decorado.
