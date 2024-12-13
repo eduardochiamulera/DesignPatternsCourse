@@ -47,7 +47,6 @@ namespace DesignPatterns.src.GOF.Structural.Decorator
 					booking.Price,
 					Status = booking.GetStatus()
 				});
-
 			}
 		}
 
