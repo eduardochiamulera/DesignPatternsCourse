@@ -49,3 +49,7 @@ BEHAVIORAL
 		Criar uma lista encadeada de objetos, onde um aponta para o outro, e cada um deles toma a decisão se vai ou não
 		realizar o tratamento.
 		Não confundir com Pipelines/Midlewares onde todos tratam a requisição.
+
+	Command (Action / Transaction)
+		Encapsula uma solicitação na forma de objeto, com isso permitindo que você parametrize esse objeto para clientes
+		diferentes, enfilere, faça algum tipo de auditoria, ou até suporte operações de undo (desfazer a operação).
