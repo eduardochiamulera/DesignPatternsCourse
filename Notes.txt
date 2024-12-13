@@ -41,3 +41,11 @@ STRUCTURAL
 		Open/Close principal
 
 		Ele incorpora um objeto que está sendo decorado.
+
+BEHAVIORAL
+	Chain of Responsability
+		A intenção dele é criar uma cadeia de objetos que recebe uma determinada requisição e um deles pode decidir
+		fazer o tratamento ao longo dessa cadeia e nesse momento o fluxo é interrompido.
+		Criar uma lista encadeada de objetos, onde um aponta para o outro, e cada um deles toma a decisão se vai ou não
+		realizar o tratamento.
+		Não confundir com Pipelines/Midlewares onde todos tratam a requisição.
